@@ -8,6 +8,9 @@
 
 body{
     background-color: #222;
+    display: flex;
+    justify-content: center;
+  
 
 }
 
@@ -20,7 +23,6 @@ body{
     border-radius: 20px ;
     padding: 40px 35px;
     text-align: center;
-
 }
 
 .cards h1{
@@ -115,4 +117,34 @@ body{
     font-size: 15px;
     margin-top: 10px;
     display: none;
+}
+
+@media (max-width: 600px) {
+    
+    body {
+        padding-top: 5px; /* Ou margin-top: 20px; Espaçamento menor para telas menores */
+    }
+
+    .cards {
+        width: 95%; /* Aumenta a largura do cartão em telas menores */
+        padding: 10px; /* Reduz o preenchimento para melhor ajuste */
+        margin: 10px; /* Reduz a margem para melhor ajuste */
+    }
+
+    .weather h1 {
+        font-size: 60px; /* Reduz o tamanho da fonte para melhor ajuste */
+    }
+
+    .weather h2 {
+        font-size: 35px; /* Reduz o tamanho da fonte para melhor ajuste */
+    }
+
+    .details {
+        margin-top: 30px; /* Reduz a margem para melhor ajuste */
+        padding: 0 10px; /* Reduz o preenchimento para melhor ajuste */
+    }
+
+    .humidity, .wind {
+        font-size: 24px; /* Reduz o tamanho da fonte para melhor ajuste */
+    }
 }
